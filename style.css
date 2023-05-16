@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    
+}
+
+
+div{
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.front{
+    animation-name:frontAnimation;
+    animation-duration:4s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+
+.back{
+    animation-name:backAnimation;
+    animation-duration:4s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+.top{
+    animation-name:topAnimation;
+    animation-duration:4s;
+    animation-timing-function: ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+.bottom{
+    animation-name:bottomAnimation;
+    animation-duration:4s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+.left{
+    animation-name:leftAnimation;
+    animation-duration:4s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+.right{
+    animation-name:rightAnimation;
+    animation-duration:4s;
+    animation-timing-function:ease;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes frontAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
+@keyframes backAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+@keyframes topAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
+@keyframes bottomAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+@keyframes leftAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(-100px);
+    }
+}
+@keyframes rightAnimation{
+    0%{
+        align-items: center;
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
+
+
+
+
+
+.front{
+    background: #76D7C4 ;
+}
+.back{
+    background-color: #4dfe;
+}
+.right{
+    background-color: #ee1133;
+   
+}
+.left{
+    background-color: #4dfe99;
+   
+}
+.top{
+    background-color: #7711ee;
+    
+}
+.bottom{
+    background-color: #afaf23;
+}
